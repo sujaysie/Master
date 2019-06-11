@@ -28,6 +28,7 @@ public class firstMob {
         driver = new AndroidDriver(new URL(CLOUD_URL), dc);
     }
 
+
     @Test
     public void testAppiumOnChrome() {
         driver.get("https://amazon.com");
