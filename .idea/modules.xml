@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Test.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Test.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Test.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TestAutothon.iml" filepath="$PROJECT_DIR$/.idea/TestAutothon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAutothon.Test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAutothon.Test.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAutothon.Test.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAutothon.Test.test.iml" />
     </modules>
   </component>
 </project>

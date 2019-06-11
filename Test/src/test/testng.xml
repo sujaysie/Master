@@ -3,6 +3,7 @@
     <test name="Test1">
         <classes>
             <class name="SystemTest.UITests.testC"/>
+            <class name="SystemTest.MobileUITest.firstMob"/>
         </classes>
     </test>
 </suite>
