@@ -1,31 +1,27 @@
 package SystemTest.MobileUITest;
 
 
-
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileBrowserType;
-import org.openqa.selenium.By;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class firstMob {
-   /* private static final String ACCESS_KEY = System.getenv("SEETEST_IO_ACCESS_KEY");
-    private static final String CLOUD_URL = "https://cloud.seetest.io:443/wd/hub";
-    private static final String TITLE = "Testing Website on Android Chrome with Java";
-    private AndroidDriver driver = null;
 
+    private  WebDriver driver;
     @BeforeTest
-    public void setUp() throws MalformedURLException {
-        DesiredCapabilities dc = new DesiredCapabilities();
-        dc.setCapability("testName", TITLE);
-        dc.setCapability("accessKey", ACCESS_KEY);
-        dc.setBrowserName(MobileBrowserType.CHROME);
-        driver = new AndroidDriver(new URL(CLOUD_URL), dc);
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
+        Map<String, String> mobileEmulation = new HashMap<>();
+
+        mobileEmulation.put("deviceName", "iPhone 5");
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+        driver = new ChromeDriver(chromeOptions);
     }
 
 
@@ -33,19 +29,6 @@ public class firstMob {
     public void testAppiumOnChrome() {
         driver.get("https://amazon.com");
         System.out.println(driver.getTitle());
-        if (driver.getCapabilities().getCapability("device.category").equals("TABLET")) {
-            driver.findElement(By.xpath("//*[@name='field-keywords']")).sendKeys("iPhone");
-                    driver.findElement(By.xpath("//*[@text='Go']")).click();
-        } else {
-            driver.findElement(By.xpath("//*[@name='k']")).sendKeys("iPhone");
-                    driver.findElement(By.xpath("//*[@value='Go']")).click();
-        }
+        driver.quit();
     }
-
-    @AfterTest
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }*/
 }
