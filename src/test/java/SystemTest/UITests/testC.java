@@ -1,16 +1,16 @@
 package SystemTest.UITests;
 
-import org.testng.annotations.Test;
 import ControlImplementation.PageObjects.GooglePage;
 import ControlImplementation.PageObjects.ImdbPage;
 import ControlImplementation.PageObjects.WikiPage;
 import ControlImplementation.UIControls.BrowserControl;
 import ControlImplementation.Utilities.ExcelDataReader;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 
