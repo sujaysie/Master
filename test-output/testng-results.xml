@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="293562" started-at="2019-07-03T13:32:45Z" finished-at="2019-07-03T13:37:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="293562" started-at="2019-07-03T13:32:45Z" finished-at="2019-07-03T13:37:39Z">
+      <class name="SystemTest.UITests.testC">
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="16030" started-at="2019-07-03T19:02:46Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:03:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=The Shawshank Redemption}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15118" started-at="2019-07-03T19:03:02Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=The Godfather}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="14952" started-at="2019-07-03T19:03:17Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:03:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=The Dark Knight}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15119" started-at="2019-07-03T19:03:32Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:03:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=Pulp Fiction}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="14156" started-at="2019-07-03T19:03:47Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:04:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=Schindler's List}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="16087" started-at="2019-07-03T19:04:01Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:04:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=The Lord of the Rings: The Return of the King}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15710" started-at="2019-07-03T19:04:18Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:04:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=The Good, the Bad and the Ugly}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15233" started-at="2019-07-03T19:04:33Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:04:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=12 Angry Men}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15005" started-at="2019-07-03T19:04:49Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:05:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=Inception}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15073" started-at="2019-07-03T19:05:04Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:05:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=Forrest Gump}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15237" started-at="2019-07-03T19:05:19Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:05:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=Fight Club}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="14924" started-at="2019-07-03T19:05:34Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:05:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=The Empire Strikes Back}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="14752" started-at="2019-07-03T19:05:49Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:06:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=Goodfellas}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15048" started-at="2019-07-03T19:06:04Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:06:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=The Matrix}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="16735" started-at="2019-07-03T19:06:19Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:06:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=One Flew Over the Cuckoo's Nest}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="14847" started-at="2019-07-03T19:06:35Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:06:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=Seven Samurai}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="17996" started-at="2019-07-03T19:06:50Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:07:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=Avengers: Infinity War}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15165" started-at="2019-07-03T19:07:08Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:07:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=A, MovieName=Interstellar}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="main(java.util.Hashtable)[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="main" duration-ms="15635" started-at="2019-07-03T19:07:23Z" data-provider="ReadExcelData" finished-at="2019-07-03T19:07:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MovieNumber=B, MovieName=Seven}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="close()[pri:0, instance:SystemTest.UITests.testC@4678c730]" name="close" is-config="true" duration-ms="1" started-at="2019-07-03T19:07:39Z" finished-at="2019-07-03T19:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SystemTest.UITests.testC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
