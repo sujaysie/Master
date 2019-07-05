@@ -1,47 +1,41 @@
 package ControlImplementation.Utilities;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import com.codoid.products.exception.FilloException;
+import com.codoid.products.fillo.Connection;
+import com.codoid.products.fillo.Fillo;
+import com.codoid.products.fillo.Recordset;
 import org.testng.annotations.DataProvider;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Hashtable;
-
+@SuppressWarnings("deprecation")
 public class ExcelDataReader {
 
-    @DataProvider
-    public static Object[][] ReadExcelData(String filepath, String filename, String sheetname) throws IOException {
-        File file = new File(filepath + "//" + filename);
-        FileInputStream fis = new FileInputStream(file);
-        Workbook workbook = new XSSFWorkbook(fis);
-        //reading from xlsx XSSFWorkbook and reading from xls HSSFWorkbook
-        Sheet sheet = workbook.getSheet(sheetname);
-        int rowcount = sheet.getLastRowNum();
-        System.out.println("row count " + rowcount);
-        Object[][] obj = new Object[rowcount][1];
-        Hashtable<String, String> record = null;
-        for (int r = 1; r <= rowcount; r++) {
-            record = new Hashtable<String, String>();
-            Row headerRow = sheet.getRow(0);
-            Row row = sheet.getRow(r);
-            for (int s = 0; s < row.getLastCellNum(); s++) {
-                String key = headerRow.getCell(s).getStringCellValue();
-                String value = row.getCell(s).getStringCellValue();
-                System.out.println(key + " > " + value);
-                record.put(key, value);
-                Cell cell = row.getCell(s);
-            }
+    @DataProvider(name = "ReadExcelData")
+    public static Object[][] ReadExcelData() throws FilloException {
+        System.setProperty("ROW","1");
+        System.setProperty("COLUMN","1");
 
-            obj[r - 1][0] = record;
-            System.out.println(obj[r - 1][0]);
-            System.out.println("");
+        Fillo fillo = new Fillo();
+        Connection conn = fillo.getConnection("D:\\Testauthothon19\\Master-master\\src\\test\\java\\TestData\\Movies.xlsx");
+
+        String query = "Select * from data";
+
+        Recordset recordset = conn.executeQuery(query);
+        Object[] colNames = recordset.getFieldNames().toArray();
+        int noOfColumns = colNames.length;
+        int noOfRows = recordset.getCount();
+
+        Object[][] data = new Object[noOfRows][noOfColumns];
+
+        int row = 0;
+        while(recordset.next())
+        {
+            for(int col=0;col<noOfColumns;col++)
+            {
+                data[row][col]= recordset.getField(recordset.getField(col).name());
+            }
+            row = row+1;
         }
-        return obj;
+        return data;
     }
    /* public static void main(String[] args){
         Object[][] obj = null;

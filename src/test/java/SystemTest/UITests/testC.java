@@ -10,8 +10,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.util.Hashtable;
 import java.util.Map;
 
 public class testC {
@@ -19,10 +17,10 @@ public class testC {
     private WebDriver driver;
     
     @DataProvider
-    public static Object[][] ReadExcelData() throws IOException {
+    public static Object[][] ReadExcelData() {
         Object[][] obj = null;
         try {
-            obj = ExcelDataReader.ReadExcelData("D:\\TestAutothon\\src\\test\\java\\TestData", "Movies.xlsx", "data");
+            obj = ExcelDataReader.ReadExcelData();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -31,12 +29,12 @@ public class testC {
 
 
     @Test (dataProvider = "ReadExcelData")
-    public void main(Hashtable<String, String> data) {
+    public void main(String serial, String movieName) {
     	control.start("chrome");
         driver = control.getDriver();   
         GooglePage googlePage = new GooglePage(driver);
-        String movieName =data.get("MovieName");
-        System.out.println(movieName);
+
+        System.out.println(serial+". "+movieName);
         googlePage.enterQuery(movieName);
         String wiki = googlePage.searchWikiLink(movieName);
         WikiPage wikiPage = new WikiPage(driver);
